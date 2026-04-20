@@ -4,6 +4,60 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.5.0] — 2026-04-21
+
+Remaining component references. Seven files covering the rest of the
+component spine — the controls, containers, and system surfaces that weren't
+in the 0.3.0 core set. Each is cited to the live HIG and follows the shared
+template.
+
+### Added — Components
+
+- `components/collections-and-scrolling.md` — when collections (image-heavy)
+  vs lists (text); nested scroll-view rules; scroll edge effects (soft vs
+  hard); pull-to-refresh; visionOS Look to Scroll and scroll-indicator
+  specifics; watchOS Digital Crown page indicator.
+- `components/segmented-controls.md` — 5–7 segment cap (5 on iPhone),
+  text-or-images-not-both, selection-vs-action rules, macOS tab-view
+  preference for top-level switching, tvOS split-view-over-segmented
+  guidance.
+- `components/sliders-steppers-toggles.md` — slider direction conventions;
+  the volume-view exception; stepper + text-field pairing; switch-vs-
+  checkbox-vs-radio decision table; macOS mini switches in grouped forms;
+  mixed-state checkboxes; never-rely-on-color-alone.
+- `components/progress-and-activity.md` — determinate vs indeterminate;
+  don't switch bar ↔ spinner mid-flight; pause + cancel semantics; gauges
+  as state (not progress); macOS level indicators; the strict Activity
+  rings rules (black background, no recoloring, never decorative).
+- `components/labels-and-badges.md` — label is uneditable text; selectable
+  diagnostic strings; the four semantic label colors; badge discipline
+  (critical new only, hide at zero, no "new feature" abuse); tab bar,
+  list row, app icon, Dynamic Island badge surfaces; iOS 17+ badge APIs.
+- `components/split-views.md` — when to use 2 vs 3 columns; selection-
+  highlight in every driving pane; macOS draggable thin-divider rule;
+  iPadOS fluid-width handling (hide tertiary first); tvOS default 1/3 vs
+  2/3 proportions; watchOS full-screen list-or-detail behavior;
+  visionOS split-view-over-new-window preference.
+- `components/system-experiences.md` — share sheet (activity view) rules;
+  no-duplicate-system-activities; share / action extensions; Quick Look
+  expectations; Spotlight indexing pointer; the macOS Services menu;
+  `ShareLink`, `UIActivityViewController`, `NSSharingServicePicker` idioms.
+
+### Pending
+
+- Lighter platform files (batch 7): iPadOS, watchOS, tvOS, visionOS.
+- Inputs (batch 8): touch-and-gestures, pointer-and-keyboard, apple-pencil,
+  digital-crown, focus-and-remote, spatial-input, game-controllers.
+- Technologies (batch 9): widgets-and-live-activities, dynamic-island,
+  control-center, lock-screen, shortcuts-and-siri, app-clips,
+  share-extension, carplay, homekit, imessage-apps, game-center,
+  generative-ai.
+- Remaining patterns (batch 10): entering-data, drag-and-drop,
+  file-management, offering-help, managing-accounts, in-app-purchase,
+  multitasking, printing, ratings-and-reviews, undo-and-redo,
+  managing-notifications, charting-data, going-full-screen,
+  live-viewing-apps, workouts.
+
 ## [0.4.0] — 2026-04-21
 
 Core pattern references. Seven files that describe the decisions behind a
