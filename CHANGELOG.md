@@ -4,6 +4,57 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.3.0] — 2026-04-20
+
+Core component references. Six files covering the bars, buttons, lists/tables,
+sheets/popovers/alerts, text inputs, and pickers/menus that form the backbone
+of any Apple-platform UI. Each file is cited to the live HIG and includes
+SwiftUI examples plus UIKit and AppKit equivalents for iOS and macOS.
+
+### Added — Components
+
+- `components/bars.md` — tab bar / navigation bar / toolbar / sidebar in one
+  file. Covers which bar belongs where, tab-bar rules (2–5 items,
+  Liquid Glass, platform placement), toolbar anatomy (leading / center /
+  trailing groupings; overflow is system-managed), and sidebar rules
+  (max two levels of hierarchy, extend content behind). Synthesizes the
+  2025 consolidation of "navigation bars" into toolbars.
+- `components/buttons.md` — style / content / role triad; hit-target floors
+  per platform; primary vs destructive vs cancel roles; macOS button types
+  (push, flexible-height, square/gradient, help, image) with placement
+  guidance; visionOS shape + size rules (circular / capsule / rounded-rect,
+  ≥60pt between centers); watchOS full-width idioms.
+- `components/lists-and-tables.md` — when to pick list vs table vs outline
+  vs collection; row feedback for navigational vs option lists; all the
+  SwiftUI list styles; macOS sortable multi-column tables and outline
+  views; tvOS focus padding; watchOS elliptical style and vertical
+  page-based nav constraints.
+- `components/sheets-and-popovers.md` — the "which presentation" decision
+  table; sheet rules and detents (`medium` vs `large`, grabber,
+  swipe-to-dismiss); popover rules (no cascades, no warnings, detachable
+  on macOS); alert anatomy and copy rules; action sheet / confirmation
+  dialog usage; platform-specific placement and button rules including
+  visionOS accessory-view 154pt max height.
+- `components/text-inputs.md` — placeholder ≠ label; match field size to
+  content; keyboard types and content-type hints for AutoFill, strong
+  passwords, and one-time codes; validation timing; secure fields; macOS
+  combo boxes; tvOS/watchOS minimize-text-entry guidance.
+- `components/pickers-and-menus.md` — the "picker vs menu vs pull-down vs
+  pop-up" decision table; menu label/icon/organization rules; submenu
+  discipline (one level, ≤5 items); toggled items with checkmarks; pickers
+  and date pickers with compact/inline/wheels/graphical styles; iOS small /
+  medium / large menu layouts; macOS menu-bar conventions and
+  title-case labels.
+
+### Pending
+
+- Core patterns (batch 5): navigation, modality, settings, search,
+  onboarding, loading, feedback.
+- Remaining components: collections-and-scrolling, alerts (standalone),
+  segmented-controls, sliders-steppers-toggles, progress-and-activity,
+  labels-and-badges, split-views, system-experiences.
+- Lighter platform files: iPadOS, watchOS, tvOS, visionOS.
+
 ## [0.2.0] — 2026-04-20
 
 Foundations complete + deep platform references for iOS and macOS. Every file
