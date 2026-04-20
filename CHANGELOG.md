@@ -4,6 +4,65 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.4.0] — 2026-04-21
+
+Core pattern references. Seven files that describe the decisions behind a
+screen, not just the components on it. Each file documents when the pattern
+applies, when it doesn't, the platform differences, and the writing rules for
+the surfaces it covers. SwiftUI plus UIKit/AppKit snippets where they add
+clarity.
+
+### Added — Patterns
+
+- `patterns/navigation.md` — the "one paradigm per platform per view" rule,
+  the tab bar / stack / sidebar / menu bar / focus / ornament matrix, and
+  decision guidance for per-screen navigation choices. Synthesis across HIG
+  (no single HIG navigation page; cites composite sources).
+- `patterns/modality.md` — when modality is correct, when it's wrong, a
+  decision tree (alert / sheet / popover / full-screen / panel), platform
+  rules for sheets and alerts, and writing guidance (pair Done with Cancel,
+  confirm before discarding unsaved work).
+- `patterns/settings.md` — smart defaults, minimizing count, three homes
+  (global → app settings area; task-specific → in-task; system-level →
+  system Settings app), macOS Settings scene conventions (⌘,, noncustomizable
+  toolbar, dim minimize/zoom), iOS/iPadOS deep-link to system Settings,
+  watchOS inline-only guidance.
+- `patterns/search.md` — one search location, scope communication, suggestions
+  and recent-query privacy, Spotlight integration, platform-specific search
+  placement (search-role tab on iOS 18+, toolbar search on macOS, voice on
+  tvOS), and writing for suggestions and results.
+- `patterns/onboarding.md` — make it fast, fun, and optional; teach through
+  interactivity; prefer contextual tips (TipKit) over a global tour; when to
+  request permissions; splash-screen discipline; what not to put in
+  onboarding (EULA, paywall, global setup).
+- `patterns/loading.md` — show something immediately, don't block interactions
+  you don't have to, match indicator kind to expected duration, skeleton and
+  cached-content patterns, optimistic UI, writing while loading, watchOS's
+  "no indeterminate indicators" rule.
+- `patterns/feedback.md` — match significance to surface, multi-channel
+  feedback as an accessibility baseline, haptics catalog (iOS / iPadOS /
+  watchOS), SF Symbols animations as feedback, toast and inline-validation
+  patterns, empty/error states with `ContentUnavailableView`, platform
+  specifics including the "no haptics in visionOS" rule.
+
+### Pending
+
+- Remaining components (batch 6): collections-and-scrolling, segmented-controls,
+  sliders-steppers-toggles, progress-and-activity, labels-and-badges,
+  split-views, system-experiences.
+- Lighter platform files (batch 7): iPadOS, watchOS, tvOS, visionOS.
+- Inputs (batch 8): touch-and-gestures, pointer-and-keyboard, apple-pencil,
+  digital-crown, focus-and-remote, spatial-input, game-controllers.
+- Technologies (batch 9): widgets-and-live-activities, dynamic-island,
+  control-center, lock-screen, shortcuts-and-siri, app-clips,
+  share-extension, carplay, homekit, imessage-apps, game-center,
+  generative-ai.
+- Remaining patterns (batch 10 if warranted): entering-data, drag-and-drop,
+  file-management, offering-help, managing-accounts, in-app-purchase,
+  multitasking, printing, ratings-and-reviews, undo-and-redo,
+  managing-notifications, charting-data, going-full-screen,
+  live-viewing-apps, workouts.
+
 ## [0.3.0] — 2026-04-20
 
 Core component references. Six files covering the bars, buttons, lists/tables,
