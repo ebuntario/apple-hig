@@ -4,7 +4,7 @@ A Claude Code skill that makes Claude actually follow Apple's [Human Interface G
 
 Works with **SwiftUI**, **UIKit**, **AppKit**, and web/Figma mockups that need to feel Apple-native.
 
-> Status: **0.1.0 — scaffold.** Skill content is being authored. Triggers and structure are in place; reference files are being filled in from the live HIG. See [`CHANGELOG.md`](./CHANGELOG.md).
+> Status: **stable · v1.0.0.** Feature-complete across foundations, patterns, components, inputs, platforms, and technologies — 68 reference files, ~15k lines, every one cited to the live HIG. See [`CHANGELOG.md`](./CHANGELOG.md).
 
 ## What it does
 
@@ -53,7 +53,19 @@ Or just `rm -rf ~/.claude/skills/apple-hig`.
 | UIKit / AppKit snippets | Secondary |
 | Web / Figma native-feel | Notes where relevant |
 
-Reference tree mirrors the HIG: `foundations/`, `patterns/`, `components/`, `inputs/`, `platforms/`, `technologies/`. See the [full structure](./SKILL.md).
+Reference tree mirrors the HIG and covers:
+
+| Area | Files |
+|---|---|
+| `foundations/` — accessibility, typography, color, dark-mode, layout, sf-symbols, materials, motion | 8 |
+| `patterns/` — navigation, modality, settings, search, onboarding, loading, feedback, entering-data, drag-and-drop, managing-accounts, in-app-purchase, managing-notifications, undo-and-redo, file-management, offering-help, multitasking, printing, charting-data, going-full-screen, live-viewing-apps, workouts, ratings-and-reviews | 22 |
+| `components/` — bars, buttons, lists-and-tables, sheets-and-popovers, text-inputs, pickers-and-menus, collections-and-scrolling, segmented-controls, sliders-steppers-toggles, progress-and-activity, labels-and-badges, split-views, system-experiences | 13 |
+| `inputs/` — touch-and-gestures, pointer-and-keyboard, apple-pencil, digital-crown, focus-and-remote, spatial-input, game-controllers | 7 |
+| `platforms/` — ios (deep), macos (deep), ipados, watchos, tvos, visionos | 6 |
+| `technologies/` — widgets-and-live-activities, dynamic-island, control-center, lock-screen, shortcuts-and-siri, app-clips, share-extension, carplay, homekit, imessage-apps, game-center, generative-ai | 12 |
+| `assets/checklists/` — pre-submission-hig-review, accessibility-review, platform-parity-review | 3 |
+
+Full routing index: [`SKILL.md`](./SKILL.md).
 
 ## How it differs from similar skill packs
 

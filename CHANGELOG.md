@@ -4,6 +4,63 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [1.0.0] — 2026-04-21
+
+**Stable release.** The skill is feature-complete across the original
+scope: foundations, patterns, components, inputs, platforms, and
+technologies. 68 reference files, ~15,000 lines of reference content,
+every file cited to the live Apple HIG.
+
+This release changes no files beyond `VERSION`, `README.md`, `SKILL.md`
+status labels, and this changelog — content shipped across 0.2.0
+through 0.10.0.
+
+### Coverage
+
+| Area | Files | Depth |
+|---|---|---|
+| Foundations | 8 | accessibility, typography, color, dark-mode, layout, sf-symbols, materials, motion |
+| Patterns | 22 | navigation, modality, settings, search, onboarding, loading, feedback, entering-data, drag-and-drop, managing-accounts, in-app-purchase, managing-notifications, undo-and-redo, file-management, offering-help, multitasking, printing, charting-data, going-full-screen, live-viewing-apps, workouts, ratings-and-reviews |
+| Components | 13 | bars, buttons, lists-and-tables, sheets-and-popovers, text-inputs, pickers-and-menus, collections-and-scrolling, segmented-controls, sliders-steppers-toggles, progress-and-activity, labels-and-badges, split-views, system-experiences |
+| Inputs | 7 | touch-and-gestures, pointer-and-keyboard, apple-pencil, digital-crown, focus-and-remote, spatial-input, game-controllers |
+| Platforms | 6 | ios (deep), macos (deep), ipados, watchos, tvos, visionos |
+| Technologies | 12 | widgets-and-live-activities, dynamic-island, control-center, lock-screen, shortcuts-and-siri, app-clips, share-extension, carplay, homekit, imessage-apps, game-center, generative-ai |
+| Checklists | 3 | pre-submission-hig-review, accessibility-review, platform-parity-review |
+
+### Non-negotiables enforced by the skill
+
+- Minimum 44×44pt touch targets on iOS / iPadOS / watchOS (28pt macOS,
+  60pt visionOS, always-focusable tvOS).
+- Dynamic Type via text styles.
+- Full Dark Mode via semantic colors.
+- VoiceOver labels on every non-decorative view.
+- SF Symbols preferred over custom icons when a system glyph exists.
+- Respect `@Environment(\.accessibilityReduceMotion)`.
+- Platform-appropriate navigation (tab bar vs sidebar vs menu bar vs
+  ornaments).
+- Safe-area-aware layout.
+- RTL-safe layouts.
+- Writing tone matches platform (Tap / Click / Select).
+
+### Phase 0
+
+The skill asks targeting questions first — platform, framework, what
+the user is building — before generating. Skipped when the user's
+brief already answers them.
+
+### Install
+
+```
+git clone --single-branch --depth 1 https://github.com/ebuntario/apple-hig.git ~/.claude/skills/apple-hig && cd ~/.claude/skills/apple-hig && ./setup
+```
+
+### Maintenance
+
+HIG updates yearly at WWDC. The `Last verified:` date at the top of
+every reference file indicates when the file was sourced from the
+live HIG. Refresh these dates after each WWDC and revise any changed
+numbers, APIs, or guidance.
+
 ## [0.10.0] — 2026-04-21
 
 Specialized patterns. Seven files for flows that show up in narrower app

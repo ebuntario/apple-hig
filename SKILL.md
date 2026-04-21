@@ -18,11 +18,10 @@ Make Claude actually follow Apple's Human Interface Guidelines when building
 for iOS, iPadOS, macOS, watchOS, tvOS, or visionOS. Works with SwiftUI, UIKit,
 AppKit, and Apple-native-feeling web/Figma mockups.
 
-> **Status: 0.1.0 scaffold.** Triggers and structure are in place. Reference
-> files are being authored from the live HIG. Until a reference file exists for
-> a given topic, fall back to the guidance in this SKILL.md plus your best
-> reading of `developer.apple.com/design/human-interface-guidelines/<slug>` —
-> and flag any gap to the user.
+> **Status: stable · v1.0.0.** Feature-complete. 68 reference files across
+> foundations, patterns, components, inputs, platforms, and technologies,
+> each cited to the live HIG. If HIG guidance evolves (WWDC releases, policy
+> changes), update the matching file's `Last verified:` date and revise.
 
 ---
 
