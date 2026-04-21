@@ -4,6 +4,61 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.8.0] — 2026-04-21
+
+Technologies — the high-leverage integration surfaces where your app meets
+the rest of the system. Twelve files covering widgets, Live Activities,
+Dynamic Island, Control Center + Controls, Lock Screen, Shortcuts + Siri,
+App Clips, share and action extensions, CarPlay, HomeKit, iMessage apps,
+Game Center, and Generative AI. Where the HIG doesn't ship a standalone
+page (Dynamic Island, Control Center, Lock Screen, Shortcuts), the file is
+a synthesis across related HIG sources with explicit citation.
+
+### Added — Technologies
+
+- `technologies/widgets-and-live-activities.md` — widget families and
+  sizes per device, rendering modes (full-color / accented / vibrant),
+  Live Activity presentations, Always On rules.
+- `technologies/dynamic-island.md` — the three presentations in depth;
+  snug-to-camera layouts; key line tinting; alert discipline.
+- `technologies/control-center.md` — Controls (iOS 18+) built on App
+  Intents; Lock Screen / Action button placement; one-action purity.
+- `technologies/lock-screen.md` — all Lock Screen surfaces (accessory
+  widgets, Live Activity banner, Controls, notifications, StandBy,
+  media lock screens); vibrant rendering; privacy in public view.
+- `technologies/shortcuts-and-siri.md` — App Intents as the primitive
+  behind Shortcuts / Siri / Action button / Controls; voice-only
+  design; background operation; AppShortcuts declaration.
+- `technologies/app-clips.md` — the 10-second rule; discovery paths
+  (Codes, NFC, QR, links); linear focused UX; card design; post-task
+  app promotion without nagging.
+- `technologies/share-extension.md` — share vs action extensions; fast
+  focused flows; system composition view; long-running work
+  continues in the app.
+- `technologies/carplay.md` — supported categories; iPhone-independence;
+  template-driven UI; sunlight-tested colors;
+  MPNowPlayingInfoCenter.
+- `technologies/homekit.md` — the object model (home / room / zone /
+  accessory / service / characteristic / scene / automation); Siri
+  vocabulary discipline; custom features vs Home app boundary.
+- `technologies/imessage-apps.md` — compact vs expanded tray; sticker
+  sizes and formats; APNG over GIF; alt text on every sticker.
+- `technologies/game-center.md` — access point discipline; four
+  achievement states; classic vs recurring leaderboards; challenges
+  track recent score; terminology lexicon; party codes.
+- `technologies/generative-ai.md` — transparency; inclusivity; privacy
+  (Foundation Models on-device); hallucination mitigation; confirm
+  destructive actions; latency UX; feedback loops; accessibility of
+  generated content.
+
+### Pending
+
+- Remaining patterns (batch 10): entering-data, drag-and-drop,
+  managing-accounts, in-app-purchase, multitasking, printing,
+  managing-notifications, undo-and-redo, charting-data,
+  going-full-screen, live-viewing-apps, workouts,
+  ratings-and-reviews, offering-help, file-management.
+
 ## [0.7.0] — 2026-04-21
 
 Inputs — the "how people interact" references that platform and component
