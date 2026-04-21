@@ -4,6 +4,41 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.10.0] — 2026-04-21
+
+Specialized patterns. Seven files for flows that show up in narrower app
+categories: multitasking, printing, charting data, going full screen, live
+viewing, workouts, and ratings/reviews. Each cited to the live HIG.
+
+### Added — Patterns (specialized)
+
+- `patterns/multitasking.md` — save and restore context; pause user-
+  attention tasks; audio interruption handling; per-platform
+  behaviors for iPadOS (Split View, Stage Manager, multi-window),
+  macOS, tvOS (PiP), visionOS (Shared vs Full Space, feathered mask).
+- `patterns/printing.md` — discoverable in standard locations (File
+  menu / share sheet); system print panel; macOS custom print
+  categories; iOS `UIActivityViewController` + `UIPrintInteractionController`;
+  `UIPrintPageRenderer` for custom layouts.
+- `patterns/charting-data.md` — Swift Charts first; common chart types;
+  descriptive headlines; consistency across charts; accessibility
+  (AXChartDescriptor, audio graphs, color-plus-shape); when NOT to
+  chart.
+- `patterns/going-full-screen.md` — when to offer; system mechanism
+  (don't fight it); preserve essential controls; pause on switch;
+  iOS defer system gestures for games; macOS ⌃⌘F.
+- `patterns/live-viewing-apps.md` — live content prominence; "looks
+  live" visual cues; one-tap Watch Now; EPG basics; content footer;
+  cloud DVR UX; Live Activity + PiP integration; per-platform rules.
+- `patterns/workouts.md` — watchOS active session rules (unique
+  layout, large numerals, motion-legible, pause/resume/stop easy);
+  summary screen with Activity Rings; sensor caveats; Live Activity
+  + Dynamic Island on iPhone workouts; HealthKit permission basics.
+- `patterns/ratings-and-reviews.md` — ask after engagement, not
+  launch/onboarding; natural stopping points; system prompt
+  (`SKStoreReviewController` / `requestReview`); 3-prompt annual
+  limit; reset-summary trade-offs; separate in-app feedback channel.
+
 ## [0.9.0] — 2026-04-21
 
 Common app patterns. Eight files covering the patterns that show up in
