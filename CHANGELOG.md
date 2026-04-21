@@ -4,6 +4,70 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.7.0] — 2026-04-21
+
+Inputs — the "how people interact" references that platform and component
+files link to repeatedly. Seven files, one per input surface, each cited to
+the live HIG and organized by platform rules + rules of use + SwiftUI and
+UIKit/AppKit snippets.
+
+### Added — Inputs
+
+- `inputs/touch-and-gestures.md` — standard gesture catalog across all six
+  platforms (tap, swipe, drag, touch-and-hold, double-tap, zoom, rotate);
+  iOS/iPadOS extras (three-finger swipe undo/redo, three-finger pinch
+  copy/paste, four-finger app switch, shake); visionOS indirect vs direct
+  gestures; tvOS clickpad rules; custom-gesture discipline (discoverable,
+  distinct, not the only path).
+- `inputs/pointer-and-keyboard.md` — iPadOS content effects (highlight /
+  lift / hover), pointer shapes and accessories, pointer magnetism; macOS
+  trackpad gesture catalog, standard pointer shapes; visionOS pointer +
+  gaze coexistence; keyboards, Full Keyboard Access, standard shortcut
+  catalog, modifier-key ordering and semantics, visionOS ⌘-hold overlay,
+  game keybinding comfort rules.
+- `inputs/apple-pencil.md` — per-model capability matrix (pressure, tilt,
+  azimuth, hover, double tap, squeeze, barrel roll); hover preview rules;
+  double-tap + squeeze + barrel-roll discipline (no destructive actions on
+  double-tap/squeeze, marking-only for barrel-roll); Scribble rules
+  (invisible focus, don't move fields while writing, hide placeholder,
+  don't autocomplete aggressively, don't autoscroll); PencilKit canvas
+  rules.
+- `inputs/digital-crown.md` — Vision Pro Crown is system-only (volume,
+  immersion, recentering, accessibility, exit); Apple Watch Crown is
+  primary navigation + value tuning; haptic detent rules; no Crown press
+  handling in apps; SwiftUI `.digitalCrownRotation(...)` example.
+- `inputs/focus-and-remote.md` — focus system across iPadOS, macOS, tvOS,
+  visionOS; iPadOS focus groups (Tab between, arrow within); tvOS five
+  focus states (unfocused, focused, selected, checked, disabled); halo vs
+  highlighted appearance; Siri Remote layout and gesture catalog; Back
+  button contract (apps vs games); incidental-tap protection during
+  playback; compatible remote buttons for EPG and live TV.
+- `inputs/spatial-input.md` — visionOS eyes + hands in depth; hover effect
+  ≠ focus; gaze privacy (no pre-pinch reporting); 60pt target + spacing
+  rule; rounded shapes for comfort; custom hover effects (delay timing,
+  constant primary view, out-of-process nature, no action-on-hover);
+  indirect-default / direct-for-reach rules; comfort rules across the
+  board.
+- `inputs/game-controllers.md` — touch controls for iOS/iPadOS games
+  (virtual controls vs direct manipulation, placement, sizing, press
+  states, contextual show/hide, virtual thumbstick under the thumb);
+  physical controller auto-detect; UI button contract (A activates, B
+  cancels, left/right shoulder = page, menu = pause); brand-correct
+  glyphs via SF Symbols; visionOS spatial controllers mirroring hand
+  input; keyboard bindings proximity and customization.
+
+### Pending
+
+- Technologies (batch 9): widgets-and-live-activities, dynamic-island,
+  control-center, lock-screen, shortcuts-and-siri, app-clips,
+  share-extension, carplay, homekit, imessage-apps, game-center,
+  generative-ai.
+- Remaining patterns (batch 10): entering-data, drag-and-drop,
+  file-management, offering-help, managing-accounts, in-app-purchase,
+  multitasking, printing, ratings-and-reviews, undo-and-redo,
+  managing-notifications, charting-data, going-full-screen,
+  live-viewing-apps, workouts.
+
 ## [0.6.0] — 2026-04-21
 
 The remaining four platform files — iPadOS, watchOS, tvOS, visionOS — each
