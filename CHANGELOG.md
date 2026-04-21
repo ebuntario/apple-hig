@@ -4,6 +4,61 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.6.0] — 2026-04-21
+
+The remaining four platform files — iPadOS, watchOS, tvOS, visionOS — each
+structured the same way as the deep iOS and macOS references: device traits,
+navigation, input, layout, typography, color/materials, platform-specific
+idioms, common mistakes, and a complete SwiftUI app example. Lighter depth
+than iOS and macOS, per the project priorities, but each file stands alone
+as a full platform reference.
+
+### Added — Platforms
+
+- `platforms/ipados.md` — resizable windows and Stage Manager / Split View /
+  Slide Over; sidebar-adaptive tab bars; three-column `NavigationSplitView`;
+  Multi-Touch, pointer, keyboard, trackpad, and Apple Pencil input model;
+  Scribble and low-latency drawing; drag-and-drop as a first-class feature;
+  menu bar commands when a hardware keyboard is attached; Mac Catalyst
+  considerations; complete `NavigationSplitView` app example.
+- `platforms/watchos.md` — glanceable design discipline; Digital Crown for
+  scrolling and value tuning; the four surfaces (app, complications, Smart
+  Stack, notifications); vertical `TabView` navigation; Always On display
+  considerations; SF Compact typography; always-dark color model with
+  tinted complications; haptic-first feedback and no indeterminate
+  indicators; Action button on Ultra; double-tap gesture semantics;
+  complete app with a Digital Crown slider and a WidgetKit complication.
+- `platforms/tvos.md` — the focus engine as the navigation model;
+  Siri Remote vocabulary; 60×80pt safe area; tab bar at 68pt top; layouts
+  that do not adapt to screen size; multiuser profile handling; Top Shelf
+  requirements; Picture-in-Picture cooperation; no pre-rounded image
+  corners; 23pt minimum type; complete SwiftUI screen with a horizontal
+  scroll grid using `.card` button style.
+- `platforms/visionos.md` — the deepest of the four because visionOS has the
+  most unique idioms. Covers windows vs volumes vs immersive spaces; the
+  glass material (no Dark Mode); eyes + indirect pinch + direct touch input
+  model; ornaments for off-window controls; 60pt target + spacing rules;
+  bolder typography for glass; color sparingly; motion and comfort rules
+  (no world rotation, avoid peripheral motion, fades over translations,
+  0.2 Hz sensitivity); Spatial Audio as the feedback channel; SharePlay
+  and spatial Personas; safety and age restrictions; complete app with a
+  window group, detail windows, an `ImmersiveSpace`, and a bottom
+  ornament.
+
+### Pending
+
+- Inputs (batch 8): touch-and-gestures, pointer-and-keyboard, apple-pencil,
+  digital-crown, focus-and-remote, spatial-input, game-controllers.
+- Technologies (batch 9): widgets-and-live-activities, dynamic-island,
+  control-center, lock-screen, shortcuts-and-siri, app-clips,
+  share-extension, carplay, homekit, imessage-apps, game-center,
+  generative-ai.
+- Remaining patterns (batch 10): entering-data, drag-and-drop,
+  file-management, offering-help, managing-accounts, in-app-purchase,
+  multitasking, printing, ratings-and-reviews, undo-and-redo,
+  managing-notifications, charting-data, going-full-screen,
+  live-viewing-apps, workouts.
+
 ## [0.5.0] — 2026-04-21
 
 Remaining component references. Seven files covering the rest of the
