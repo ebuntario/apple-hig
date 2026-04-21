@@ -4,6 +4,47 @@ All notable changes to `apple-hig` will be documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning:
 [SemVer](https://semver.org/). Each authoring batch maps to a minor release.
 
+## [0.9.0] — 2026-04-21
+
+Common app patterns. Eight files covering the patterns that show up in
+almost every app: data entry, drag and drop, account management, in-app
+purchase, notifications, undo and redo, file management, and offering
+help. Each cited to the live HIG.
+
+### Added — Patterns (common)
+
+- `patterns/entering-data.md` — pre-fill from system, keyboard types and
+  content-type hints for AutoFill/strong-password/2FA, secure fields,
+  dictation/Scribble/Continuity keyboard, dynamic validation.
+- `patterns/drag-and-drop.md` — move vs copy semantics; feedback rules;
+  multi-format drags with prioritized fidelity; spring loading; iPad
+  additive drag; macOS inactive-window drags; visionOS z-axis + drop-
+  into-empty-space.
+- `patterns/managing-accounts.md` — when to require accounts, Sign in
+  with Apple first, passkeys over passwords, mandatory account
+  deletion, TV provider accounts, tvOS another-device auth.
+- `patterns/in-app-purchase.md` — IAP vs Apple Pay; four purchase
+  types; Family Sharing; subscription signup required content; offer
+  codes; system-provided management UI; exit surveys and win-back.
+- `patterns/managing-notifications.md` — permission earned after value;
+  four interruption levels; Focus + delivery scheduling; marketing
+  requires separate opt-in; never Time Sensitive for marketing;
+  Lock Screen privacy.
+- `patterns/undo-and-redo.md` — multi-level undo; action names;
+  scroll-to-change; batched undo for incremental adjustments;
+  iOS three-finger swipe/shake; macOS ⌘Z/⇧⌘Z.
+- `patterns/file-management.md` — document launcher (iOS 18+/iPadOS
+  18+); autosave default; Quick Look previews and generators; file
+  provider extensions; Finder Sync; DocumentGroup and NSDocument.
+- `patterns/offering-help.md` — contextual over global; TipKit;
+  macOS tooltips; Help menu with ⌘?.
+
+### Pending
+
+- Remaining patterns (batch 10 / v0.10.0): multitasking, printing,
+  charting-data, going-full-screen, live-viewing-apps, workouts,
+  ratings-and-reviews.
+
 ## [0.8.0] — 2026-04-21
 
 Technologies — the high-leverage integration surfaces where your app meets
